@@ -1,4 +1,3 @@
-import com.buscadorDeRua.www.exeptions.CepForaDaFormatacaoException;
 import com.buscadorDeRua.www.exeptions.CepInexistenteException;
 import com.buscadorDeRua.www.models.Cep;
 import com.buscadorDeRua.www.models.RequisicaoViaCep;
@@ -41,7 +40,7 @@ public class Main {
 
                 if(escolha.equalsIgnoreCase("nao")){
                     break;
-                };
+                }
             }else{
                 System.out.println("Por favor, digite um cep válido.");
             }
