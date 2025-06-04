@@ -38,7 +38,6 @@ public class RequisicaoViaCep {
                     -----------------------------------------------------------------------
                     """);
         }
-        System.out.println(endereco);
 
     }
 
