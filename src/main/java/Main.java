@@ -26,7 +26,6 @@ public class Main {
             boolean oCepEValido = cep.validacao();
             if(oCepEValido){
 
-
                 RequisicaoViaCep requisicao = new RequisicaoViaCep();
                 try{
                     requisicao.buscar(cep.getCep());
