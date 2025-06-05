@@ -49,14 +49,13 @@ public class RequisicaoViaCep {
 
         System.out.println("Resultado final: " + endereco.logradouro() + " " + endereco.bairro() + ", " + endereco.localidade() + " " + endereco.uf());
         System.out.println("-----------------------------------------------------------------------");
-
         this.salvarPesquisa();
     }
 
     private void salvarPesquisa() throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-        FileWriter fileWriter = new FileWriter("Enderecos.json",true);
+        FileWriter fileWriter = new FileWriter( endereco.cep() + ".json");
         fileWriter.write(gson.toJson(this.endereco));
         fileWriter.close();
     }
